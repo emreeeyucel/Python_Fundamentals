@@ -363,6 +363,7 @@ else:
 
 
 
+
 # region Bir sayının Mutlak Değerini Hesaplayalım
 sayi = float(input('Sayı : '))
 
