@@ -326,7 +326,6 @@ print("Almanya ile Türkiye arasındaki mesafe:", mesafe, "km")
 
 
 #region Kullanıcıdan İki Tarih Alın Ve Bu Tarihler Arasındaki Gün Sayısını Hesaplayın.
-
 from datetime import datetime
 # İlk tarihi kullanıcıdan al
 tarih1_str = input("İlk tarihi (GG.AA.YYYY formatında) girin: ")
