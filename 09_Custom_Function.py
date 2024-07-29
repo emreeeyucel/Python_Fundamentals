@@ -243,7 +243,7 @@ def remove_duplicate_word(sentence: str) -> None:
 
     print(result)
 
-remove_duplicate_word('Merhaba ben emre emre ben emre')
+remove_duplicate_word('Merhaba ben emre emre ben emre emre')
 # endregion
 
 
