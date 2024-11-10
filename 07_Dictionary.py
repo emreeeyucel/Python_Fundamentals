@@ -148,7 +148,7 @@ for item in products:
         print(f'Product Name : {item["name"]}\n'
           f'price :{item["price"]}')
         print()
-        print(item)   # Output ->  {'name': 'Everlast Pro Boxing Gloves', 'price': 245} ve  {'name': 'Everlast Tranining Gloves', 'price': 200} Aynı Sonuç Çıktı Farkı ..
+        print(item)   # Output ->  {'name': 'Everlast Pro Boxing Gloves', 'price': 245} ve {'name': 'Everlast Tranining Gloves', 'price': 200} Aynı Sonuç Çıktı Farkı ..
 
 # endregion
 
@@ -165,9 +165,26 @@ realese_year_movie = [{
     'Dune': 2021
 }]
 
-# Tüm Değerleri Ekrana Yazdıralım.
+# Tüm Değerleri Ekrana .
 for movie in realese_year_movie:
     for value in movie.values():
         print(value,  end=' ')
 
 # endregion
+
+
+
+
+# region Listenin içindeki 2021 yılını ekrana Yazdıralım
+for item in realese_year_movie:
+    print(item['Dune'])
+#endregion
+
+
+
+
+# region Listenin içindeki sözlüklerin tüm değerleri ekrana yazdır
+for movie in realese_year_movie:
+    for value in movie.values():
+        print(value,  end=' ')
+#endregion
