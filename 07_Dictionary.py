@@ -136,7 +136,7 @@ for item in products:
 
 toplam = 0
 for i in products:
-    if 'Everlast' in i['name']:
+    if 'everlast' in i['name'].lower():
         toplam += i['price']
 
 print(toplam)
