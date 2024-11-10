@@ -169,7 +169,6 @@ realese_year_movie = [{
 for movie in realese_year_movie:
     for value in movie.values():
         print(value,  end=' ')
-
 # endregion
 
 
