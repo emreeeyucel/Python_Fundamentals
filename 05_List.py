@@ -38,7 +38,7 @@ print(top_boxer)
 
 top_boxer = ['Mike Tyson', 'Muhammed Ali', 'Lenox Lewis', 'Evander Holyfield', 'Rock Marciano']
 
-del top_boxer[2:4]
+del top_boxer[3:6]
 print(top_boxer)
 # endregion
 
