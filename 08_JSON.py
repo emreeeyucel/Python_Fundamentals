@@ -39,7 +39,7 @@ pprint(new_data)
 
 
 
-
+# region Task 4
 # region Tüm anahtarların isimlerini Türkçe karşılığı ile değiştirelim.
 
 # Yeni anahtarlar listesi
@@ -54,3 +54,50 @@ pprint(yeni_sozluk)
 # map() fonksiyonu ise, bir iterable (örneğin bir liste) üzerinde her bir öğeye belirli bir fonksiyonu uygulayarak dönüşüm yapar.
 # endregion
 
+
+
+
+# region Task 5
+# region toplam kaç author bulunmaktadır?
+toplam = 0
+for article in data['articles']:
+    if article['author']:                       # Yazar varsa (None ya da boş değilse)
+        toplam += 1
+
+# print(toplam)
+# endregion
+
+
+
+
+# region Task 6
+# region toplam kaç adet description bilgisi bulunmaktadır? (None içerir)
+toplam = 0
+for article in data['articles']:
+    # Eğer 'author' alanı boş değilse
+    if article['description']:
+        toplam += 1
+# print(toplam)
+# endregion
+
+
+
+
+
+# region Task 7
+# toplam kaç author bulunmaktadır? (len formülü)
+# Boş olmayan 'author' değerine sahip makaleleri listele
+authors_with_values = []  # Boş bir liste başlatıyoruz
+
+# Makaleler üzerinde döngü başlatıyoruz
+for article in data['articles']:
+    if article['author']:
+        # Makaleyi listeye ekliyoruz
+        authors_with_values.append(article)                     # author varsa makaleyi listeye ekle. Ardından listedeki dictleri say.
+pprint(authors_with_values)
+
+# listeyi kullanarak toplam sayıyı buluyoruz
+toplam = len(authors_with_values)
+
+print(toplam)
+# endregion
