@@ -24,4 +24,11 @@ for article in data.get('articles'):
         pprint(article)
 # endregion
 
+# region Task 3
+# "Region: 'articles', 'status' ve 'totalResults' anahtarları hariç kalan veriyi bir sözlükte saklayalım ve bunu yeni bir değişkende tutalım."
+new_data = data['articles'][0]
+pprint(new_data)
+
+# endregion
+
 
