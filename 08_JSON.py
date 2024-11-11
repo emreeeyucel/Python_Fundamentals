@@ -14,6 +14,9 @@ pprint(f' Title : {data["articles"][0]["title"]}')
 pprint(f' Publis : {data["articles"][0]["publishedAt"]}')
 # endregion
 
+
+
+
 # region Task 2
 # Kullanıcıdan Alınan Yazar İsminin Makalesini Ekrana Yazdıralım.
 
@@ -23,6 +26,9 @@ for article in data.get('articles'):
     if article.get('author') == author_name:
         pprint(article)
 # endregion
+
+
+
 
 # region Task 3
 # "Region: 'articles', 'status' ve 'totalResults' anahtarları hariç kalan veriyi bir sözlükte saklayalım ve bunu yeni bir değişkende tutalım."
