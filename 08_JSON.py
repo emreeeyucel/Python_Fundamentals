@@ -38,3 +38,19 @@ pprint(new_data)
 # endregion
 
 
+
+
+# region Tüm anahtarların isimlerini Türkçe karşılığı ile değiştirelim.
+
+# Yeni anahtarlar listesi
+key_map = ['kaynak', 'yazar', 'başlık', 'tanım', 'url', 'urlRresim', 'yayınlanmaTarihi', 'içerik']
+
+# map ile anahtarları değiştirme
+yeni_sozluk = dict(zip(key_map, new_data.values()))             # Yeni anahtarımız ile varolan değerleri birleştir.
+pprint(yeni_sozluk)
+
+
+# zip() fonksiyonu, Python'da birden fazla iterable (örneğin, listeler veya demetler) üzerinde elemanları birleştirerek yeni bir iterable oluşturur.  Örneğimizde anahtarları değiştirip, var olan değerlerimiz ile birleştirerek yeni bir sözlük yaratarak bu problemi çözdük. Map fonksiyonu ilede çözebilirdik.
+# map() fonksiyonu ise, bir iterable (örneğin bir liste) üzerinde her bir öğeye belirli bir fonksiyonu uygulayarak dönüşüm yapar.
+# endregion
+
