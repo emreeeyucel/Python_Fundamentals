@@ -51,6 +51,8 @@ print(my_dict['Favori Books']['Savaş Tarihi']['Cambridge War History'])    # Ç
 
 # 'Napoleon A Life ' Bölmesine Basım Yılı Olan 2014 Yıl Bilgisini Ekleyelim ve Tüm Bilgilerin Çıktısını Ekrana Yazdıralım.
 my_dict['Favori Books']['Savaş Tarihi']['Napoleon A Life'] = 'Andrew Robert, 2014'
+my_dict['Favori Books']['Savaş Tarihi'].update({'Napoleon A Life': 'Andrew Robert, 2014'})                      # İkinci bir yöntem
+
 pprint(my_dict)
 
 # endregion
