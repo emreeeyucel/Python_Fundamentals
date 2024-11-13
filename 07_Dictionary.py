@@ -108,11 +108,13 @@ products = [
     {'name': 'Lonova', 'price': 15000},
     ]
 
-# Listenin Sonuna Benzer Bir Sözlük Ekleyelim Ve Ekrana Çıktı Verelim (Eklenen İsim ve Tüm Liste Ayrı Ayrı Basılsın)
+# region Bagy Ürününe Stok bilgisi ekleyelim Ayrıca listenin sonuna Monster ürün bilgilerini içeren ürün ekleyelim.
 
-products.append({'name': 'Nokia', 'price': 1000})
-print(products[6]['name'])
+products[2].update({'stok': 10})
 pprint(products)
+
+products.append({'name': 'Monster', 'price': 27000})                
+print(products[6]['name'])
 
 
 
