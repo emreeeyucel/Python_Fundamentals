@@ -101,3 +101,34 @@ toplam = len(authors_with_values)
 
 print(toplam)
 # endregion
+
+
+
+
+# region Task 8
+# Eğer bir haberin author bilgisi None olanları bulalım ve makaleyi yazalım
+
+for item in data['articles']:
+    if item['author'] is None:
+        print(item)
+# endregion
+
+
+
+
+# region Task 9
+# Eğer bir haberin author bilgisi None ise "Unknown Author" olarak güncelleyen bir kod nasıl yazılır?
+
+for item in data['articles']:
+    if item['author'] is None:
+        item['author'] = 'Unknown Author'
+# endregion
+
+
+
+
+# region Task 10
+# description uzunluğu 100 karakterden fazla olan haberlerin listesini al.
+long_descriptions = [article for article in data['articles'] if len(article['description']) > 100]
+print(long_descriptions)
+# endregion

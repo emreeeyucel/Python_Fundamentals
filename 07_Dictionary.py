@@ -113,7 +113,7 @@ products = [
 products[2].update({'stok': 10})
 pprint(products)
 
-products.append({'name': 'Monster', 'price': 27000})                
+products.append({'name': 'Monster', 'price': 27000})
 print(products[6]['name'])
 
 
