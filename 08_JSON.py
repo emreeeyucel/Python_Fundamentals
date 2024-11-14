@@ -119,9 +119,16 @@ for item in data['articles']:
 # region Task 9
 # Eğer bir haberin author bilgisi None ise "Unknown Author" olarak güncelleyen bir kod nasıl yazılır?
 
+
+# Path 1
 for item in data['articles']:
     if item['author'] is None:
         item['author'] = 'Unknown Author'
+
+# Path 2
+for item in data['articles']:
+    if item['author'] is None:
+        item.update({'author': 'Unknown Author'})
 # endregion
 
 
