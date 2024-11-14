@@ -129,6 +129,14 @@ for item in data['articles']:
 
 # region Task 10
 # description uzunluğu 100 karakterden fazla olan haberlerin listesini al.
-long_descriptions = [article for article in data['articles'] if len(article['description']) > 100]
-print(long_descriptions)
+
+description_list = []
+
+for item in data['articles']:
+    if len(item['description']) > 100:
+        description_list.append(item)
+
+pprint(description_list)
+print(len(description_list))
+
 # endregion
