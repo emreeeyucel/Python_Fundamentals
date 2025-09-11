@@ -2,7 +2,7 @@ from pprint import pprint
 from requests import get
 import requests
 
-response = get('https://newsapi.org/v2/everything?q=tesla&from=2024-06-19&sortBy=publishedAt&apiKey=33d1f9fd08b3449d81e67f0deb4c4469')
+response = get('https://newsapi.org/v2/everything?q=tesla&from=2025-08-11&sortBy=publishedAt&apiKey=33d1f9fd08b3449d81e67f0deb4c4469')
 data = response.json()
 pprint(data)
 
