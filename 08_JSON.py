@@ -34,13 +34,12 @@ for article in data.get('articles'):
 # "Region: 'articles', 'status' ve 'totalResults' anahtarları hariç kalan veriyi bir sözlükte saklayalım ve bunu yeni bir değişkende tutalım."
 new_data = data['articles'][0]
 pprint(new_data)
-
 # endregion
 
 
 
 # region Task 4
-# region Tüm anahtarların isimlerini Türkçe karşılığı ile değiştirelim.
+# region Oluşturduğumuz 'new_data' adlı datamızdaki anahtarların isimlerini Türkçe karşılığı ile değiştirelim.
 
 # Yeni anahtarlar listesi
 key_map = ['kaynak', 'yazar', 'başlık', 'tanım', 'url', 'urlRresim', 'yayınlanmaTarihi', 'içerik']
@@ -56,8 +55,27 @@ pprint(yeni_sozluk)
 
 
 
-
 # region Task 5
+# region Datamızdaki tüm anahtarların isimlerini Türkçe karşılığı ile değiştirelim.
+
+haberler = []
+key_map = ['kaynak', 'yazar', 'başlık', 'tanım', 'url', 'urlResim', 'yayınlanmaTarihi', 'içerik']
+
+# Tüm makaleleri listeye ekle
+
+for makale in data['articles']:
+    haberler.append(makale)
+
+# Her makale için Türkçe anahtarlarla yeni sözlük oluştur
+
+for haber in haberler:
+    yeni_haber = dict(zip(key_map, haber.values()))
+    pprint(yeni_haber)
+# endregion
+
+
+
+# region Task 6
 # region toplam kaç author bulunmaktadır?
 toplam = 0
 for article in data['articles']:
@@ -70,7 +88,7 @@ for article in data['articles']:
 
 
 
-# region Task 6
+# region Task 7
 # region toplam kaç adet description bilgisi bulunmaktadır? (None içerir)
 toplam = 0
 for article in data['articles']:
@@ -84,7 +102,7 @@ for article in data['articles']:
 
 
 
-# region Task 7
+# region Task 8
 # toplam kaç author bulunmaktadır? (len formülü)
 # Boş olmayan 'author' değerine sahip makaleleri listele
 authors_with_values = []  # Boş bir liste başlatıyoruz
@@ -105,7 +123,7 @@ print(toplam)
 
 
 
-# region Task 8
+# region Task 9
 # Eğer bir haberin author bilgisi None olanları bulalım ve makaleyi yazalım
 
 for item in data['articles']:
@@ -116,7 +134,7 @@ for item in data['articles']:
 
 
 
-# region Task 9
+# region Task 10
 # Eğer bir haberin author bilgisi None ise "Unknown Author" olarak güncelleyen bir kod nasıl yazılır?
 
 
@@ -134,7 +152,7 @@ for item in data['articles']:
 
 
 
-# region Task 10
+# region Task 11
 # description uzunluğu 100 karakterden fazla olan haberlerin listesini al.
 
 description_list = []
