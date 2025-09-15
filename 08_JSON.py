@@ -148,7 +148,7 @@ for item in data['articles']:
 
 
 
-# description uzunluğu 100 karakterden fazla olan haberlerin listesini al.
+# region description uzunluğu 100 karakterden fazla olan haberlerin listesini al.
 
 description_list = []
 
